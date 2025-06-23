@@ -2,11 +2,11 @@
   {
     "name": "default",
     "type": "mysql",
-    "host": "192.168.0.211",
+    "host": "${process.env.DB_HOST}",
     "port": 3306,
-    "username": "root",
-    "password": "1234",
-    "database": "",
+    "username": "${process.env.DB_USERNAME}",
+    "password": "${process.env.DB_PASSWORD}",
+    "database": "${process.env.DB_DATABASE}",
     "synchronize": false,
     "entities": ["entities/*.js"]
   }
